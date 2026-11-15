@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<modDesc descVersion="116" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://validation.gdn.giants-software.com/xml/fs25/modDesc.xsd">
+    <author>FS Modding</author>
+    <version>0.1.0.0</version>
+    <title>
+        <en>Road Lane Assist</en>
+        <de>Spurhalteassistent fuer Strassen</de>
+        <ro>Asistent de Banda pe Drum</ro>
+    </title>
+    <description>
+        <en><![CDATA[Lane keeping assist for public roads. It keeps your vehicle in its lane on paved roads, like a car's lane assist. It is made for driving on the road, not for fieldwork.
+
+How to use:
+- Drive onto a road at more than 5 km/h.
+- Press Insert (or Left Alt + W) to switch the assist on or off.
+- The first time in each vehicle, the assist calibrates the steering for about two seconds (small steering movements, keep your hands off). After that it holds your lane.
+- Left Alt + K switches the lane side (left / right of the road centre).
+- Turn signal (1 = left, 3 = right): at a junction or roundabout the assist takes the turn on that side. Away from junctions the signal does nothing. The signal switches off by itself after the turn.
+- Left Alt + Up / Down: move the lane away from / closer to the road centre (default: exactly on the road centre line).
+- Left Alt + Page Up / Page Down: steering response (higher = reacts faster).
+- Left Alt + H: show the planned path on the road.
+- The steering wheel icon at the bottom of the screen is orange when the assist is off and green when it is on.
+- Steering yourself, reversing, leaving the road or leaving the vehicle switches it off automatically.
+
+The assist follows the AI road splines of the map. It only works on maps with road splines (the same data the AI traffic and helpers use) and near those roads. It is an assistance system: always stay ready to steer and brake.
+
+Singleplayer and the multiplayer host are fully supported. Multiplayer clients need the road data from the server and may not have the assist available.]]></en>
+        <de><![CDATA[Spurhalteassistent fuer oeffentliche Strassen. Er haelt dein Fahrzeug auf befestigten Strassen in der Spur, wie der Spurhalteassistent eines Autos. Gedacht fuer Fahrten auf der Strasse, nicht fuer Feldarbeit.
+
+Bedienung:
+- Fahre mit mehr als 5 km/h auf eine Strasse.
+- Druecke Einfg (oder Linke Alt + W), um den Assistenten ein- oder auszuschalten.
+- Beim ersten Mal in jedem Fahrzeug kalibriert der Assistent die Lenkung etwa zwei Sekunden lang (kleine Lenkbewegungen, Haende vom Lenkrad). Danach haelt er die Spur.
+- Linke Alt + K wechselt die Spurseite (links / rechts der Strassenmitte).
+- Blinker (1 = links, 3 = rechts): an einer Kreuzung oder im Kreisverkehr biegt der Assistent auf dieser Seite ab. Ausserhalb von Kreuzungen hat der Blinker keine Wirkung. Der Blinker schaltet sich nach dem Abbiegen selbst aus.
+- Linke Alt + Hoch / Runter: Spur von der Strassenmitte weg / naeher heran.
+- Linke Alt + Bild hoch / Bild runter: Lenkreaktion (hoeher = schneller).
+- Linke Alt + H: geplanten Weg auf der Strasse anzeigen.
+- Das Lenkrad-Symbol unten am Bildschirm ist orange bei ausgeschaltetem und gruen bei eingeschaltetem Assistenten.
+- Selbst lenken, Rueckwaertsfahren, die Strasse verlassen oder das Fahrzeug verlassen schaltet ihn automatisch aus.
+
+Der Assistent folgt den KI-Strassen-Splines der Karte. Er funktioniert nur auf Karten mit Strassen-Splines (dieselben Daten wie fuer KI-Verkehr und Helfer) und in der Naehe dieser Strassen. Es ist ein Assistenzsystem: immer lenk- und bremsbereit bleiben.
+
+Einzelspieler und der Multiplayer-Host werden voll unterstuetzt. Multiplayer-Clients benoetigen die Strassendaten vom Server und haben den Assistenten eventuell nicht verfuegbar.]]></de>
+        <ro><![CDATA[Asistent de mentinere a benzii pe drumurile publice. Tine vehiculul pe banda lui, pe drumurile asfaltate, ca asistentul unei masini. Este facut pentru condus pe drum, nu pentru lucru pe camp.
+
+Cum se foloseste:
+- Intra pe un drum cu peste 5 km/h.
+- Apasa Insert (sau Left Alt + W) ca sa pornesti sau sa opresti asistentul.
+- Prima data in fiecare vehicul, asistentul calibreaza directia circa doua secunde (miscari mici de volan, ia mainile de pe volan). Apoi tine banda.
+- Left Alt + K schimba partea benzii (stanga / dreapta fata de centrul drumului).
+- Semnalizare (1 = stanga, 3 = dreapta): intr-o intersectie sau un sens giratoriu asistentul vireaza pe partea respectiva. In afara intersectiilor semnalizarea nu face nimic. Semnalizarea se opreste singura dupa viraj.
+- Left Alt + Sus / Jos: muta banda mai departe / mai aproape de centrul drumului.
+- Left Alt + Page Up / Page Down: reactia volanului (mai mare = reactioneaza mai repede).
+- Left Alt + H: arata traseul planificat pe drum.
+- Iconita de volan din josul ecranului este portocalie cand asistentul e oprit si verde cand e pornit.
+- Daca virezi tu, mergi in marsarier, iesi de pe drum sau cobori din vehicul, se opreste singur.
+
+Asistentul urmareste spline-urile de drum AI ale hartii. Merge doar pe harti cu spline-uri de drum (aceleasi date ca traficul AI si muncitorii) si langa acele drumuri. Este un sistem de asistenta: fii mereu gata sa virezi si sa franezi.]]></ro>
+    </description>
+    <iconFilename>icon_RoadLaneAssist.dds</iconFilename>
+    <multiplayer supported="true"/>
+    <extraSourceFiles>
+        <sourceFile filename="scripts/RoadLaneAssist.lua"/>
+    </extraSourceFiles>
+</modDesc>
